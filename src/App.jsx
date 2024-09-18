@@ -1,7 +1,16 @@
+import { useEffect } from "react";
+
 export default function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+
+    const fetchNexAdvice = async () => {
+        const response = await fetch("https://api.adviceslip.com/advice");
+        const data = await response.json();
+        console.log(data);
+    };
+
+    useEffect(() => {
+        fetchNexAdvice();
+    }, []);
+    
+    return <></>
 }

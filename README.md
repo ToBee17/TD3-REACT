@@ -10,3 +10,7 @@ Currently, two official plugins are available:
 - npm install -D tailwindcss postcss autoprefixer
 
 - npm run dev
+
+- npm install framer-motion
+
+- npm i class-variance-authority
