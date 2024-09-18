@@ -1,16 +1,15 @@
-import { useEffect } from "react";
+import Card from "./components/Card";
 
 export default function App() {
 
-    const fetchNexAdvice = async () => {
-        const response = await fetch("https://api.adviceslip.com/advice");
-        const data = await response.json();
-        console.log(data);
-    };
 
-    useEffect(() => {
-        fetchNexAdvice();
-    }, []);
-    
-    return <></>
+    return (
+        <>
+            <div className="flex flex-col justify-center items-center h-screen bg-background text-blue-color text-xl font-bold font-mont">
+                <Card />
+
+                
+            </div>
+        </>
+    );
 }
